@@ -1,0 +1,9 @@
+.transactions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 10px;
+    gap: 33px;
+    border: 1px solid #E4E7EE;
+}

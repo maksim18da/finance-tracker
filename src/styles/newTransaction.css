@@ -1,0 +1,15 @@
+.interface{
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+select, input{
+    background-color: #F7F8FA;
+    border: 1px solid #E4E7EE;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.addTransaction{
+    padding: 10px 15px;
+    font-weight: 600;
+}

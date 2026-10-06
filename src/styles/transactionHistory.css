@@ -1,0 +1,75 @@
+.transactionInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 3px;
+}
+.name-date{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.category-spent{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.transactionName{
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--black);
+}
+.transactionDate{
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--gray);
+}
+.category{
+    border-radius: 10px;
+    border: none;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.category.food{
+    background-color: #E0503B13;
+    color: #E0503B;
+}
+.category.transport{
+    background-color: #FB20EC13;
+    color: #FB20EC;
+}
+.category.entertainment{
+    background-color: #F0A63A13;
+    color: #F0A63A;
+}
+.category.health{
+    background-color: #1F9D6B13;
+    color: #1F9D6B;
+}
+.category.income{
+    background-color: #21cedb13;
+    color: #148991;
+}
+.spent{
+    font-size: 13px;
+    font-weight: bold;
+}
+.spent.expenses{
+    color: #E0503B;
+}
+.spent.income{
+    color: #1F9D6B;
+}
+.close-btn{
+    background: none;
+    border: none;
+    color: var(--gray);
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+.close-btn:hover{
+    background-color: #E0503B13;
+    color: #E0503B;
+}

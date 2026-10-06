@@ -1,0 +1,19 @@
+.limits{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 10px;
+    border: 1px solid #E4E7EE;
+    padding: 18px 17px;
+    width: 22%;
+    min-width: 400px;
+    box-sizing: border-box;
+    margin-top: 22px;
+}
+.title_limits, .transactionTitle{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--gray);
+}

@@ -1,0 +1,62 @@
+.tracker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tracker_title{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+.monthly_balance{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-end;
+}
+.title_balance, .card .title{
+    font-size: 12px;
+    line-height: 140%;
+    font-weight: normal;
+    color: var(--gray);
+}
+.total_price{
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+.total.income, .total.expenses, .total.operations{
+    font-size: 20px;
+    font-weight: bold;
+}
+.total.income{
+    color: var(--green);
+}
+.total.expenses{
+    color: var(--red)
+}
+.total.operations{
+    color: var(--black)
+}
+.cardsInfo{
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E7EE;
+    padding: 13px 17px;
+    width: 100%;
+}
+.limits_operations{
+    display: flex;
+    gap: 16px;
+}

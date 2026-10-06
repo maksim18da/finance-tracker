@@ -1,0 +1,144 @@
+/* responsive.css — подключать ПОСЛЕДНИМ, после всех остальных css */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 16px 24px;
+}
+
+#root {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.tracker,
+.cardsInfo,
+.limits_operations {
+    width: 100%;
+}
+
+.limits_operations {
+    align-items: flex-start;
+}
+
+.transactions {
+    flex: 1;
+    min-width: 0;
+}
+
+input, select {
+    min-width: 0;
+}
+
+/* обёртка «сумма + ✎» в Category.jsx (стилей у неё не было) */
+.money-configure {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ФИКС: .category (бейдж в истории) применялся и к блокам лимитов */
+.limits .category {
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+/* форма новой операции может переноситься на любой ширине */
+.interface {
+    flex-wrap: wrap;
+}
+.interface select,
+.interface input {
+    flex: 1 1 120px;
+}
+
+/* длинные названия операций не ломают строку */
+.name-date {
+    min-width: 0;
+}
+.transactionName {
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Планшет и меньше ---------- */
+@media (max-width: 900px) {
+    .limits_operations {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .limits {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ---------- Телефон ---------- */
+@media (max-width: 640px) {
+    body {
+        margin-top: 24px;
+        padding: 0 12px 24px;
+    }
+
+    .tracker {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .monthly_balance {
+        align-items: flex-start;
+    }
+    .total_price {
+        font-size: 28px;
+    }
+
+    .cardsInfo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .limits,
+    .transactions {
+        padding: 14px;
+    }
+
+    .addTransaction {
+        width: 100%;
+    }
+
+    /* режим редактирования лимита: поле и кнопки переносятся */
+    .name_money {
+        flex-wrap: wrap;
+    }
+    .configure-block {
+        flex-wrap: wrap;
+    }
+}
+
+/* ---------- Маленький телефон ---------- */
+@media (max-width: 420px) {
+    .total.income,
+    .total.expenses,
+    .total.operations {
+        font-size: 18px;
+    }
+
+    .interface select,
+    .interface input {
+        flex-basis: 100%;
+    }
+
+    .transactionInfo {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .category-spent {
+        gap: 8px;
+        margin-left: auto;
+    }
+    .input-number-value {
+        width: 70px;
+    }
+}

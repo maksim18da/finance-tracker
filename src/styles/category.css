@@ -1,0 +1,96 @@
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.name_money{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.food_name{
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 140%;
+}
+.money_info.novisible{
+    display: none;
+}
+.money_info{
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--gray);
+    line-height: 140%;
+}
+.progress-bar{
+    width: 100%;
+    appearance: none; 
+    height: 6px;
+}
+progress::-webkit-progress-value {
+    border-radius: 3px;
+}
+progress.food::-webkit-progress-value {
+    background-color: #E0503B;
+}
+progress.transport::-webkit-progress-value {
+    background-color: #2E5CFF;
+}
+progress.entertainment::-webkit-progress-value {
+    background-color: #F0A63A;
+}
+progress.health::-webkit-progress-value {
+    background-color: #1F9D6B;
+}
+progress::-webkit-progress-bar {
+    background-color: #E4E7EE;
+    border-radius: 3px;
+}
+.configure-btn{
+    font-size: 13px;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 7px;
+    background: none;
+    color: var(--gray);
+    padding: 5px;
+    border: none;
+}
+.configure-btn:hover{
+    cursor: pointer;
+    background-color: #f2f2f5;
+}
+.configure-block{
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+.input-number-value{
+    border-radius: 7px;
+    background-color: #F7F8FA;
+    border: 1px solid #E4E7EE;
+    width: 85px;
+}
+.save, .cancel, .addTransaction{
+    border-radius: 7px;
+    padding: 6px 10px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: #2E5CFF;
+    border: none;
+}
+.cancel{
+    color: #FFFFFF;
+    background-color: #2e323ddd;
+}
+.save:hover, .addTransaction:hover{
+    cursor: pointer;
+    background-color: #2e5bffdc;
+}
+.cancel:hover{
+    cursor: pointer;
+    background-color: #2e323dc9;
+}
